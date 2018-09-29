@@ -1,0 +1,159 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Барбершоп "Бородинский"</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="барбершоп">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главаня</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="photo.html">Наши работы</a>
+          </li>	
+          <li class="site-nav__item">
+            <a class="site-nav__link  site-nav__link--active">Записаться</a>
+          </li>	
+          <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Контакты</a>
+          <li class="site-nav__item">
+              <a class="site-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">Войти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="page-content">
+      <h2 class="page-content__title">Запись на стрижку</h2>
+      <a class="page-content__button button" href="index.html">На главную</a>
+      <form class="form" action="post">
+        <div class="form-group">
+          <label class="field-text">
+            <span class="field-text__label">Фамилия</span>
+            <input class="field-text__input" type="text" name="surname" placeholder="Фамилия">
+          </label>
+          <label class="field-text">
+            <span class="field-text__label">Имя</span>
+            <input class="field-text__input" type="text" name="name" placeholder="Имя">
+          </label>
+          <label class="field-text">
+            <span class="field-text__label">Отчество</span>
+            <input class="field-text__input" type="text" name="patronymic" placeholder="Отчество">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-text">
+            <span class="field-text__label">контактный телефон</span>
+            <input class="field-text__input" type="tel" name="phone" placeholder="Контактный телефон">
+          </label>
+          <label class="field-text">
+            <span class="field-text__label">контактный e-mail</span>
+            <input class="field-text__input field-text__input--bg-gray" type="email" name="email" placeholder="Контактный e-mail">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="field-textarea">
+            <textarea class="field-textarea__input" name="wishes" placeholder="Доп. информация для мастера"></textarea>
+          </label>
+        </div>
+        <div class="form-group">
+          <div class="form-group__title">Выберите модель бороды:</div>
+          <label class="field-radio">
+            <input class="field-radio__input" type="radio" name="type" value="admiral" checked>
+            <span class="field-radio__label">Адмирал</span>
+          </label>
+          <label class="field-radio">
+            <input class="field-radio__input" type="radio" name="type" value="lumberjack">
+            <span class="field-radio__label">Лесоруб</span>
+          </label>
+          <label class="field-radio">
+            <input class="field-radio__input" type="radio" name="type" value="polar explorer">
+            <span class="field-radio__label">Полярник</span>
+          </label>
+          <label class="field-radio">
+            <input class="field-radio__input" type="radio" name="type" value="boyar">
+            <span class="field-radio__label">Боярин</span>
+          </label>
+          <label class="field-radio">
+            <input class="field-radio__input" type="radio" name="type" value="sage">
+            <span class="field-radio__label">Мудрец</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <div class="form-group__title">Дополнительные услуги:</div>
+          <label class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" checked>
+            <span class="field-checkbox__label">Подкрасить бороду</span>
+          </label>
+          <label class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox" checked>
+            <span class="field-checkbox__label">Накрутить усы</span>
+          </label>
+          <label class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__label">Причесать бороду</span>
+          </label>
+          <label class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__label">Подровнять виски</span>
+          </label>
+          <label class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__label">Убать седину</span>
+          </label>
+          <label class="field-checkbox">
+            <input class="field-checkbox__input" type="checkbox">
+            <span class="field-checkbox__label">Отполировать лысину</span>
+          </label>
+        </div>
+        <button class="form__button button" type="submit">Отправить заявку</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп «Бородинский»</b>
+        <p class="contacts__text">
+          г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+          </a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
